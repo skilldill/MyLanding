@@ -1,0 +1,404 @@
+/*-----For FontAweSome-----*/
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+    cursor: default;
+}
+
+ul, li{
+    display: block;
+}
+a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*-----Header-----*/
+.header{
+    height: 100vh;
+    background: linear-gradient(#e200ff, #ffffff );
+}
+
+.logo{
+    font-family: 'Pacifico', cursive;
+    color: #ffffff;
+    font-size: 25px;
+    letter-spacing: .1em;
+}
+
+/*-----Menu-----*/
+.menu{
+    margin-top:60px;
+}
+
+.menu__items{
+    display: flex;
+}
+
+.menu__item{
+    font-size: 19px;
+}
+
+.menu__item a{
+    display: inline-block;
+    padding: 15px 28px 10px 28px;
+    transition: all .3s;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.menu__item a:hover{
+    background-color: white;
+    color: #e200ff;
+    transition: all .3s;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0px;
+    
+}
+
+/*-----Begin text-----*/
+.begin__text{
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+
+.begin__text h1{
+    
+    color: #ffffff;
+    margin-top: 130px;
+    margin-bottom: 90px;
+}
+
+.begin__btn{
+    padding: 8px 25px 8px 28px;
+    border:2px;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: transparent;
+    font-size: 20px;
+    transition: all .3s;
+}
+
+.begin__btn:hover{
+    background-color: white;
+    color: #f190fd;
+    border-color:#ffffff;
+    transition: all .3s;
+}
+
+/*----- Features -----*/
+.features{
+    height: 100vh;
+    background: linear-gradient(#ffffff, transparent), url("../img/reading.jpg") no-repeat bottom; 
+    background-size: cover; 
+}
+
+.features__text{
+    margin-top: 180px;
+    border:2px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-style: solid;
+    text-align: center;
+    height: 260px;
+    transition: all .3s;
+}
+
+.features__text p{
+    padding: 5px;
+    }
+
+.features__text-bottom{
+    margin-top: 280px;
+    transition: all .5s;
+}
+
+.features__text:hover{
+    background-color: #ffffff;
+    color: black;
+    transition: all .3s;
+}
+
+.features__text-bottom:hover{
+    margin-top: 180px;
+    transition: all .5s;
+}
+
+/*-----About site -----*/
+.about_site{
+    height: 100vh;
+    background-attachment: fixed;
+    background-image: url('../img/computer.jpg');
+    background-size: cover;
+}
+
+.about_site__text{
+    margin-top: 130px;
+    text-align: center;
+    background-image: url('../img/circle_color.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 460px;
+}
+
+.about_site__text p{
+    padding-top: 60px;
+    font-size: 20px;
+}
+
+/*----- Skills -----*/
+.skills{
+    height: 100vh;
+    background-image: url('../img/skills.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.skills__title{
+    text-align: right;
+    margin-top: 100px;
+    font-size: 50px;
+    letter-spacing: .2em;
+    color: #ffffff;
+}
+
+.skills__features{
+    margin-top:50px;
+    color:#ffffff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.skills__features p{
+    padding: 5px 0 5px 5px;
+}
+
+.skills__features h2{
+    padding-bottom: 0;
+    padding-top:0;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.skills__icons{
+    text-align: center;
+}
+
+.skills__icons__list{
+    display: flex;
+    text-align: center;
+    width:60%;
+    margin: auto;
+}
+.skills__icon img{
+    width: 100px;
+    padding: 10px;
+}
+
+/*----- Connection -----*/
+.connection{
+    height: 80vh;
+    background-image: url('../img/color2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.call_back{
+    text-align: center;
+    margin-top: 150px;
+}
+
+.call_back__title{
+    letter-spacing: .3em;
+    font-size: 40px;
+    color: #ffffff;
+}
+.call_back__socila_media{
+    width:40%;
+    margin: auto;
+}
+.call_back__social_item{
+    text-align: left;
+    padding-bottom: 5px;
+    letter-spacing: .2em;
+    font-size: 20px;
+}
+
+/*----- Footer -----*/
+.footer{
+    height: 20vh;
+    background-color: #909090;
+}
+
+.footer__menu_item{
+    padding-bottom: 5px;
+}
+
+/*----- Adaptation -----*/
+
+@media (min-width: 300px) and (max-width: 900px) {
+    .header{
+        background: #f6a0fd;
+        height: 600px;
+    }
+    
+    .logo{
+        margin: auto;
+        text-align: center;
+    }
+    
+    .logo h1{
+        margin: 0;
+    }
+    
+    .menu{
+        margin: 0;
+    }
+    .menu__items{
+        text-align: center;
+        display:block;
+        width: 100%;
+        padding: 0;
+    }
+    .menu__item{
+        width: 100%;
+    }
+    .menu__item a{
+        width: 100%;
+        padding-top:28px;
+        padding-bottom: 28px;
+        margin-bottom: 0;
+    }
+    
+    .menu__item a:hover{
+        background-color: white;
+        color: #e200ff;
+        transition: all .3s;
+        padding-top:28px;
+        padding-bottom: 28px;
+        margin-bottom: 0;
+    }
+    
+    .begin__text h1{
+        margin-top:10px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    
+    .begin__btn{
+        margin-top: 30px;
+        padding-right:40%;
+        padding-left:40%;
+    }
+    
+    /*Features*/
+    
+    .features{
+        height: 900px;
+        background: url("../img/reading.jpg") no-repeat center;
+        background-size:auto;
+        background-size: 1500px;
+        
+    }
+    
+    .features__text{
+        margin-top: 30px;
+        height: 170px;
+    }
+    
+    .features__text-bottom{
+        margin-top:30px;
+    }
+    
+    .features__text:hover{
+         margin-top: 30px;
+    }
+    
+    /*About site*/
+    .about_site{
+        height: 700px;
+    }
+    
+    .about_site__text p{
+        padding-top:100px;
+    }
+    
+    /*Skills*/
+    .skills{
+        height:1100px;
+    }
+    
+    .skills__icon img{
+        width:70px;
+    }
+    
+    .skills__icons{
+        padding: 0;
+        text-align: center;
+        margin: auto;
+        padding-right: 20%;
+        padding-left:20%;
+        
+    }
+    
+    .skills__icons__list{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .skills__title{
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 8px;
+    }
+    
+    /*Connection*/
+    .connection{
+        height: 500px;
+    }
+    
+    .call_back__socila_media{
+        font-size: 15px;
+        padding-left: 0;
+        padding-right: 0;
+        width: 90%;
+    }
+    
+    .footer{
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) { 
+    .skills__icon img{
+        width:20px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 430px){
+    .features__text{
+        margin-top: 30px;
+        height: 190px;
+    }
+    
+    .about_site__text{
+        background-size: 300px;
+    }
+    
+    .skills{
+        height:1200px;
+    }
+    
+    .call_back__socila_media{
+        width: 100%;
+    }
+}
+
+
+
